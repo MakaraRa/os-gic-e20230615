@@ -1,0 +1,14 @@
+/home/gic-ra-makara/oslab-work/lab1/task2_files
+candle.txt
+cloud.txt
+This is file cloud
+This is file cloud
+This is file candle
+candle.txt
+cloud.txt
+cloud_copy.txt
+candle_renamed.txt
+cloud.txt
+cloud_copy.txt
+candle_renamed.txt
+cloud.txt
