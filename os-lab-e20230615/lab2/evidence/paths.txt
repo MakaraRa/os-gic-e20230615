@@ -1,0 +1,26 @@
+Lab 2 - Path Evidence
+
+1. Relative path used to move the first report:
+   cd incoming
+   mv -- "$file1" ../reports/
+
+2. Absolute path used to move the second report:
+   mv -- "$OSLAB_WORKSPACE/lab2/incoming/$file2" "$OSLAB_WORKSPACE/lab2/reports/"
+
+3. Relative path used to copy both reports to Finance:
+   cp -- "reports/$file1" "reports/$file2" "TechCorp/$owner/"
+
+4. Absolute path used by HR to read the original report:
+   cat "$OSLAB_WORKSPACE/lab2/reports/$file1"
+
+5. Path error:
+   Error: cat: reports/tax summary.txt: No such file or directory
+
+6. Correct path:
+   cat "../../reports/$file1"
+
+7. Path decision:
+   Relative paths are useful when working within a known directory structure.
+   Absolute paths identify the complete location and can be useful when accessing
+   files from different working directories.
+Fix: ../../reports/tax summary.txt

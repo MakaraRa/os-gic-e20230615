@@ -1,0 +1,6 @@
+reports/README.txt
+reports/tax summary.txt
+reports/vendor list.txt
+TechCorp/Finance/archive/first-original.txt
+TechCorp/Finance/tax summary.txt
+TechCorp/Finance/vendor list.txt
