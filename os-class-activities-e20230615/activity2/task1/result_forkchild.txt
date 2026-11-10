@@ -1,0 +1,12 @@
+Parent process (PID: 2496) — creating child...
+Child process (PID: 2497, Parent PID: 2496)
+Child: sleeping 30s — observe the process tree now!
+total 36
+drwxr-xr-x 2 ra-makara ra-makara  4096 Nov 10 16:53 .
+drwxr-xr-x 7 ra-makara ra-makara  4096 Nov 10 16:53 ..
+-rwxr-xr-x 1 ra-makara ra-makara 16480 Nov 10 16:53 forkchild
+-rw-r--r-- 1 ra-makara ra-makara  1011 Nov 10 16:53 forkchild.c
+-rw-r--r-- 1 ra-makara ra-makara   147 Nov 10 16:53 result_forkchild.txt
+Parent: waiting for child (PID: 2497) to finish...
+Parent: child exited with status 0
+Parent: done.

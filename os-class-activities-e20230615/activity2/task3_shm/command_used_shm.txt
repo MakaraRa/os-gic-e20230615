@@ -1,0 +1,20 @@
+  167  cd ~/os-gic-e20230615/os-class-activities-e20230615
+  168  mkdir -p activity2/{screenshots,task1,task2,task3_shm,task4_mq}
+  169  ls -R activity2
+  170  cd ~/os-gic-e20230615/os-class-activities-e20230615/activity2/task1
+  171  nano forkchild.c
+  172  gcc -o forkchild forkchild.c
+  173  ./forkchild > result_forkchild.txt 2>&1
+  174  cat result_forkchild.txt
+  175  history | tail -n 20 > command_used_forkchild.txt
+  176  cat result_forkchild.txt
+  177  history | tail -n 20 > command_used_forkchild.txt
+  178  cd ~/os-gic-e20230615/os-class-activities-e20230615/activity2/task3_shm
+  179  nano shm-producer.c
+  180  nano shm-consumer.c
+  181  gcc -o shm-producer shm-producer.c -lrt
+  182  gcc -o shm-consumer shm-consumer.c -lrt
+  183  ./shm-producer
+  184  ./shm-consumer > result-shm-ipc.txt
+  185  cat result-shm-ipc.txt
+  186  history | tail -n 20 > command_used_shm.txt
