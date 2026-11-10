@@ -1,0 +1,68 @@
+===== PROCESS STATUS =====
+Name:	cat
+Umask:	0002
+State:	R (running)
+Tgid:	1871021
+Ngid:	0
+Pid:	1871021
+PPid:	1871019
+TracerPid:	0
+Uid:	1041	1041	1041	1041
+Gid:	1041	1041	1041	1041
+FDSize:	256
+Groups:	1041 
+NStgid:	1871021
+NSpid:	1871021
+NSpgid:	1871019
+NSsid:	1869398
+Kthread:	0
+VmPeak:	   16244 kB
+VmSize:	   16244 kB
+VmLck:	       0 kB
+
+===== MEMORY MAPS =====
+616909292000-616909384000 r--p 00000000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/cat
+616909384000-61690983c000 r-xp 000f2000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/cat
+61690983c000-616909bfb000 r--p 005aa000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/cat
+616909bfb000-616909d60000 r--p 00968000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/cat
+616909d60000-616909d66000 rw-p 00acd000 fc:00 9044366                    /usr/lib/cargo/bin/coreutils/cat
+616909d66000-616909d67000 rw-p 00000000 00:00 0 
+616919d22000-616919d64000 rw-p 00000000 00:00 0                          [heap]
+7509fb954000-7509fb957000 r--p 00000000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+7509fb957000-7509fb9d3000 r-xp 00003000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+7509fb9d3000-7509fb9fe000 r--p 0007f000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+7509fb9fe000-7509fb9ff000 r--p 000a9000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+7509fb9ff000-7509fba00000 rw-p 000aa000 fc:00 9045266                    /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0
+7509fba00000-7509fba28000 r--p 00000000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7509fba28000-7509fbbc0000 r-xp 00028000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7509fbbc0000-7509fbc0e000 r--p 001c0000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7509fbc0e000-7509fbc12000 r--p 0020e000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7509fbc12000-7509fbc14000 rw-p 00212000 fc:00 9045152                    /usr/lib/x86_64-linux-gnu/libc.so.6
+7509fbc14000-7509fbc21000 rw-p 00000000 00:00 0 
+7509fbc2a000-7509fbc2f000 rw-p 00000000 00:00 0 
+7509fbc2f000-7509fbc41000 r--p 00000000 fc:00 9045155                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7509fbc41000-7509fbce1000 r-xp 00012000 fc:00 9045155                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7509fbce1000-7509fbd53000 r--p 000b2000 fc:00 9045155                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7509fbd53000-7509fbd54000 r--p 00123000 fc:00 9045155                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7509fbd54000-7509fbd55000 rw-p 00124000 fc:00 9045155                    /usr/lib/x86_64-linux-gnu/libm.so.6
+7509fbd55000-7509fbd59000 r--p 00000000 fc:00 9078683                    /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+
+===== COMMAND LINE =====
+cat /proc/self/cmdline 
+
+===== RUNNING PROCESSES =====
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2  26036 17432 ?        Ss   Oct07   2:40 /usr/lib/systemd/systemd --system --deserialize=107
+root           2  0.0  0.0      0     0 ?        S    Oct07   0:03 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Oct07   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/0:0H-kblockd]
+root          13  0.0  0.0      0     0 ?        I<   Oct07   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    Oct07   0:02 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    Oct07   2:40 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    Oct07   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    Oct07   0:00 [rcu_exp_gp_kthread_worker]

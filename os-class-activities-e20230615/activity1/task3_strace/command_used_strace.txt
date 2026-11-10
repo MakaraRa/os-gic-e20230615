@@ -2,5 +2,7 @@ strace -e trace=openat,read,write,close -o strace_lib_task1.txt ./file_creator_l
 strace -e trace=openat,read,write,close -o strace_sys_task1.txt ./file_creator_sys
 strace -e trace=openat,read,write,close -o strace_lib_reader.txt ./file_reader_lib
 strace -e trace=openat,read,write,close -o strace_sys_reader.txt ./file_reader_sys
+strace -o strace_lib_task1_full.txt ./file_creator_lib
+strace -o strace_sys_task1_full.txt ./file_creator_sys
 strace -c -o strace_summary_lib.txt ./file_creator_lib
 strace -c -o strace_summary_sys.txt ./file_creator_sys

@@ -1,0 +1,43 @@
+===== LOADED KERNEL MODULES =====
+Module                  Size  Used by
+algif_hash             20480  0
+af_alg                 32768  1 algif_hash
+cpuid                  12288  0
+qrtr                   53248  2
+nfnetlink              20480  1
+cfg80211             1548288  0
+binfmt_misc            24576  1
+intel_rapl_msr         20480  0
+intel_rapl_common      57344  1 intel_rapl_msr
+intel_uncore_frequency_common    20480  0
+kvm_intel             552960  0
+kvm                  1527808  1 kvm_intel
+irqbypass              16384  1 kvm
+rapl                   20480  0
+vmgenid                12288  0
+bochs                  24576  0
+i2c_piix4              36864  0
+i2c_smbus              20480  1 i2c_piix4
+joydev                 32768  0
+
+===== AVAILABLE KERNEL MODULES =====
+8250
+8250_base
+8250_mid
+8250_pci
+acpi
+acpi_cpufreq
+acpi_x86
+acpiphp
+aesni_intel
+af_alg
+algif_hash
+amd64_agp
+apparmor
+asiliantfb
+ata_generic
+ata_piix
+atkbd
+autofs4
+battery
+binfmt_misc

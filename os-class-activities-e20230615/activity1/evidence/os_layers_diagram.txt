@@ -1,0 +1,26 @@
++------------------------------------------+
+| USER SPACE                               |
+| Shell, file_creator, file_reader,        |
+| dir_list programs                        |
++------------------------------------------+
+                    |
+                    v
++------------------------------------------+
+| SYSTEM CALL INTERFACE                    |
+| open(), read(), write(), close(), stat() |
++------------------------------------------+
+                    |
+                    v
++------------------------------------------+
+| LINUX KERNEL                             |
+| Process management, memory management,   |
+| file systems, device drivers             |
+| Kernel version: see system_info.txt      |
+| Modules: see kernel_modules.txt          |
++------------------------------------------+
+                    |
+                    v
++------------------------------------------+
+| HARDWARE                                 |
+| CPU and memory: see system_info.txt      |
++------------------------------------------+

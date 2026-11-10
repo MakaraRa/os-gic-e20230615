@@ -1,0 +1,16 @@
+===== SYSTEM INFORMATION =====
+Linux i4gic-os 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux
+
+===== CPU INFORMATION =====
+model name	: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz
+
+===== MEMORY INFORMATION =====
+MemTotal:        7600784 kB
+MemFree:          705620 kB
+MemAvailable:    4498788 kB
+
+===== KERNEL VERSION =====
+Linux version 7.0.0-38-generic (buildd@lcy02-amd64-070) (x86_64-linux-gnu-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026
+
+===== SYSTEM UPTIME =====
+2914182.97 23113034.96
