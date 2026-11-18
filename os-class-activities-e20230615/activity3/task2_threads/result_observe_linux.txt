@@ -1,0 +1,98 @@
+===== ps -eLf =====
+ra-maka+    3066     384    3066  0    5 12:58 pts/0    00:00:00 ./threads_observe
+ra-maka+    3066     384    3068  0    5 12:58 pts/0    00:00:00 ./threads_observe
+ra-maka+    3066     384    3069  0    5 12:58 pts/0    00:00:00 ./threads_observe
+ra-maka+    3066     384    3070  0    5 12:58 pts/0    00:00:00 ./threads_observe
+ra-maka+    3066     384    3071  0    5 12:58 pts/0    00:00:00 ./threads_observe
+
+===== ps -T =====
+    PID    SPID TTY          TIME CMD
+   3066    3066 pts/0    00:00:00 threads_observe
+   3066    3068 pts/0    00:00:00 threads_observe
+   3066    3069 pts/0    00:00:00 threads_observe
+   3066    3070 pts/0    00:00:00 threads_observe
+   3066    3071 pts/0    00:00:00 threads_observe
+
+===== /proc/PID/task =====
+3066
+3068
+3069
+3070
+3071
+
+===== Thread count =====
+5
+
+===== Process status =====
+Name:	threads_observe
+State:	S (sleeping)
+Threads:	5
+===== kthreadd process =====
+    PID    PPID PSR COMMAND
+      2       1   9 init-systemd(Ub
+
+===== Children of PID 2 =====
+    PID    PPID PSR COMMAND
+      3       2   2 init-watcher
+      8       2  12 init
+    382       2   2 SessionLeader
+    385       2  14 login
+   2022       2  12 SessionLeader
+
+===== Process tree =====
+systemd(1)-+-agetty(322)
+           |-chronyd-starter(134)---chronyd(244)---chronyd(262)
+           |-cron(140)
+           |-dbus-daemon(144)
+           |-init-systemd(Ub(2)-+-SessionLeader(382)---Relay(384)(383)---bash(384)-+-head(3589)
+           |                    |                                                  `-pstree(3588)
+           |                    |-SessionLeader(2022)---Relay(2030)(2024)---bash(2030)
+           |                    |-init(8)---{init}(9)
+           |                    |-init-watcher(3)
+           |                    |-login(385)---bash(461)
+           |                    `-{init-systemd(Ub}(10)
+           |-networkd-dispat(165)
+           |-polkitd(825)-+-{polkitd}(827)
+           |              |-{polkitd}(828)
+           |              `-{polkitd}(829)
+           |-rsyslogd(223)-+-{rsyslogd}(318)
+           |               |-{rsyslogd}(319)
+           |               `-{rsyslogd}(320)
+           |-systemd(430)---(sd-pam)(434)
+           |-systemd-journal(48)
+           |-systemd-logind(173)
+           |-systemd-resolve(65)
+           |-systemd-udevd(87)
+           `-unattended-upgr(293)---{unattended-upgr}(341)
+
+===== Process list =====
+    PID    PPID NLWP COMMAND
+      1       0    1 systemd
+      2       1    2 init-systemd(Ub
+      3       2    1  \_ init-watcher
+      8       2    2  \_ init
+    382       2    1  \_ SessionLeader
+    383     382    1  |   \_ Relay(384)
+    384     383    1  |       \_ bash
+   3590     384    1  |           \_ ps
+   3591     384    1  |           \_ head
+    385       2    1  \_ login
+    461     385    1  |   \_ bash
+   2022       2    1  \_ SessionLeader
+   2024    2022    1      \_ Relay(2030)
+   2030    2024    1          \_ bash
+     48       1    1 systemd-journal
+     65       1    1 systemd-resolve
+     87       1    1 systemd-udevd
+    134       1    1 chronyd-starter
+    244     134    1  \_ chronyd
+    262     244    1      \_ chronyd
+    140       1    1 cron
+    144       1    1 dbus-daemon
+    165       1    1 networkd-dispat
+    173       1    1 systemd-logind
+    223       1    4 rsyslogd
+    293       1    2 unattended-upgr
+    322       1    1 agetty
+    430       1    1 systemd
+    434     430    1  \_ (sd-pam)

@@ -1,0 +1,30 @@
+
+void *worker(void *arg) {
+    for (int i = 1; i <= 10; i++) {
+        printf("Worker thread: step %d\n", i);
+        usleep(200000);
+    }
+
+    printf("Worker thread: finished.\n");
+    return NULL;
+}
+
+int main() {
+    pthread_t thread;
+
+    printf("Main: creating worker thread.\n");
+
+    pthread_create(&thread, NULL, worker, NULL);
+
+    printf("Main: exiting without pthread_join().\n");
+
+    return 0;
+}
+EOF
+
+  438  gcc -o no_join_test no_join_test.c -pthread
+  439  ./no_join_test
+  440  ./no_join_test > result_no_join_test.txt 2>&1
+  441  cat result_threads.txt
+  442  cat result_threads_mutex.txt
+  443  history | tail -n 30 > command_used_threads.txt

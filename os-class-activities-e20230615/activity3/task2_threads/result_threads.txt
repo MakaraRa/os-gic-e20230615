@@ -1,0 +1,16 @@
+Main thread (TID: 127946465568576): creating 4 threads...
+PID: 2282
+
+Thread 1 (TID: 127946461279936): starting work...
+Thread 1 (TID: 127946461279936): done.
+Thread 2 (TID: 127946452887232): starting work...
+Thread 2 (TID: 127946452887232): done.
+Thread 3 (TID: 127946444494528): starting work...
+Thread 4 (TID: 127946436101824): starting work...
+Thread 3 (TID: 127946444494528): done.
+Thread 4 (TID: 127946436101824): done.
+
+All threads completed.
+Expected counter value: 400000
+Actual counter value:   347660
+Race condition detected! Counter is incorrect.

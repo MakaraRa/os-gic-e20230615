@@ -1,0 +1,30 @@
+    int bytes_read = read(sock_fd, buffer, BUFFER_SIZE - 1);
+    if (bytes_read > 0) {
+        buffer[bytes_read] = '\0';
+        printf("Client: received from server: \"%s\"\n", buffer);
+    } else if (bytes_read < 0) {
+        perror("read");
+    }
+
+    /* 6. Close socket */
+    close(sock_fd);
+    printf("Client: connection closed.\n");
+
+    return 0;
+}
+EOF
+
+  405  ls
+  406  gcc -Wall -Wextra -o server server.c
+  407  gcc -Wall -Wextra -o client client.c
+  408  ls -l
+  409  ./client
+  410  ./server
+  411  ./server > result_server.txt 2>&1 &
+  412  SERVER_PID=$!
+  413  sleep 1
+  414  ./client > result_client.txt 2>&1
+  415  wait "$SERVER_PID"
+  416  cat result_server.txt result_client.txt > result_socket.txt
+  417  cat result_socket.txt
+  418  history | tail -n 30 > command_used_socket.txt

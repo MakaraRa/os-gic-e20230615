@@ -1,0 +1,2 @@
+Main: creating worker thread.
+Main: exiting without pthread_join().
